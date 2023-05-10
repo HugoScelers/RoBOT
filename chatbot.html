@@ -7,6 +7,7 @@
     <title>Chatbot</title>
     <link rel="stylesheet" href="./assets/css/chatbot.css">
     <script src="./assets/js/app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.basic.min.js"></script>
 </head>
 
 <body>
@@ -14,14 +15,12 @@
         <div class="chatbot-header">
             <h2>Mon RoBOT</h2>
         </div>
-        <div class="chatbot-messages">
-            <div class="chatbot-question"></div>
-            <div class="chatbot-reponse"></div>
-        
+        <div class="chatbot-messages" id="chatbot-messages">
         </div>
         <div class="chatbot-input">
             <form id="chatbot-form">
-                <input type="text" id="question" placeholder="Tapez votre question...">
+                <input list="suggestions" type="text" id="question" placeholder="Tapez votre question...">
+                <datalist id="suggestions"></datalist>
                 <button type="submit">Envoyer</button>
             </form>
         </div>
