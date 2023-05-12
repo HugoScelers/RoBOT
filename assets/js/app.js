@@ -53,3 +53,6 @@ const choice = document.getElementById("suggestions")
 dialog.forEach((val) => {
     choice.innerHTML += `<option value ="${val.question}">`
 });
+
+fetch("https://api-robot.onrender.com/api/v1/dialog/questions")
+.then(response=>console.log(response))
