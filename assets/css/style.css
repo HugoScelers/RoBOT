@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
+/* Importation de la police Montserrat avec un poids de 700 depuis Google Fonts */
+
 body,
 html {
     height: 100%;
@@ -10,11 +12,17 @@ html {
     background-color: #36393f;
 }
 
+/* Style de base pour le corps et l'élément html, définition de la hauteur, des marges,
+   du padding, de la police de caractères, de la couleur du texte et de la couleur de fond */
+
 .icon-container {
     text-align: center;
     font-size: 9em;
     color: #00B894;
 }
+
+/* Style du conteneur de l'icône du chatbot, centrage du texte, taille de police de 9em,
+   couleur du texte en vert */
 
 h1 {
     font-size: 2.5rem;
@@ -24,11 +32,17 @@ h1 {
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
+/* Style du titre principal, taille de police de 2.5rem, marge supérieure de 2rem,
+   couleur du texte en blanc, centrage du texte, ajout d'une ombre légère au texte */
+
 h2 {
     font-size: 1.2rem;
     color: #B2B1B9;
     text-align: center;
 }
+
+/* Style du sous-titre, taille de police de 1.2rem, couleur du texte en gris,
+   centrage du texte */
 
 button {
     background-color: #00B894;
@@ -45,9 +59,15 @@ button {
     transition: background-color 0.3s ease-in-out;
 }
 
+/* Style du bouton, couleur de fond en vert, couleur du texte en blanc, taille de police de 1.2rem,
+   police en gras, bord arrondi, padding, suppression de la bordure, curseur en forme de main,
+   affichage en bloc avec marges automatiques, ajout d'une ombre légère, transition pour une animation lors du survol */
+
 button:hover {
     background-color: #079992;
 }
+
+/* Style du bouton lorsqu'il est survolé, changement de couleur de fond */
 
 @media screen and (max-width: 768px) {
     body {
@@ -55,3 +75,6 @@ button:hover {
         padding: 1rem;
     }
 }
+
+/* Style spécifique pour les écrans d'une largeur maximale de 768px,
+   définition de la largeur du corps à 100% et ajout de padding */

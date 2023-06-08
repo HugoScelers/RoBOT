@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
+/* Importation de la police Montserrat avec un poids de 700 depuis Google Fonts */
+
 * {
     padding: 0;
     margin: 0;
@@ -7,17 +9,24 @@
     color: #F5F5F5;
 }
 
+/* Réinitialisation des marges et des paddings, utilisation de la police Montserrat,
+   définition de la couleur du texte par défaut */
+
 body,
 html {
     height: 100%;
     background-color: #36393f;
 }
 
+/* Définition de la couleur de fond du corps et de l'élément html */
+
 .chatbot-container {
     max-width: 800px;
     margin: 0 auto;
     height: auto;
 }
+
+/* Conteneur principal du chatbot, définition de la largeur maximale et de la marge */
 
 .chatbot-header {
     background-color: #2F3640;
@@ -27,14 +36,22 @@ html {
     width: 100%;
 }
 
+/* En-tête du chatbot, couleur de fond, alignement du texte au centre, 
+   ombrage, largeur de 100% */
+
 .chatbot-header h2:hover {
     transition: all 0.3s;
     color: #00B894;
 }
 
-h2{
+/* Lorsque le curseur survole l'élément h2 dans l'en-tête du chatbot,
+   la couleur du texte change avec une transition animée */
+
+h2 {
     cursor: pointer;
 }
+
+/* Style du curseur en forme de main lorsqu'il survole un élément h2 */
 
 .chatbot-header h2 a {
     color: #F5F5F5;
@@ -44,6 +61,8 @@ h2{
 .chatbot-header h2 a:hover {
     color: #00B894;
 }
+
+/* Style des liens dans l'en-tête du chatbot, couleur de texte et changement de couleur lors du survol */
 
 .chatbot-messages {
     flex: 1;
@@ -57,6 +76,10 @@ h2{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
 }
 
+/* Zone des messages du chatbot, définition de la hauteur et de la largeur,
+   couleur de fond, activation de la barre de défilement verticale, 
+   marges et ombrage */
+
 .chatbot-question,
 .chatbot-reponse {
     max-width: fit-content;
@@ -65,24 +88,35 @@ h2{
     margin-bottom: 1rem;
 }
 
+/* Style des messages de question et de réponse, largeur maximale, padding, 
+   bord arrondi et marges */
+
 .chatbot-question {
     align-self: right;
     background-color: #0984E3;
 }
+
+/* Style du message de question, alignement à droite et couleur de fond */
 
 .chatbot-reponse {
     align-self: left;
     background-color: #00B894;
 }
 
+/* Style du message de réponse, alignement à gauche et couleur de fond */
+
 .chatbot-input {
     width: 100%;
 }
+
+/* Zone de saisie du chatbot, largeur de 100% */
 
 .chatbot-input form {
     display: flex;
     width: 100%;
 }
+
+/* Style du formulaire de saisie, affichage en ligne et largeur de 100% */
 
 .chatbot-input form input[type="text"] {
     flex: 9;
@@ -94,9 +128,15 @@ h2{
     color: black;
 }
 
+/* Style du champ de saisie de texte, flexibilité de 9 pour prendre la majorité de l'espace,
+   bord arrondi à gauche, suppression de la bordure, ajout de padding et d'ombrage,
+   définition de la taille de police et de la couleur du texte */
+
 .chatbot-input form input[type="text"]:focus {
     outline: none;
 }
+
+/* Style du champ de saisie de texte lorsqu'il est en focus, suppression de l'outline */
 
 .chatbot-input form button[type="submit"] {
     flex: 1;
@@ -109,6 +149,12 @@ h2{
     transition: all 0.2s;
 }
 
+/* Style du bouton de soumission, flexibilité de 1 pour prendre moins d'espace,
+   couleur de fond, bord arrondi à droite, suppression de la bordure, ajout de padding et d'ombrage,
+   définition de la taille de police, transition pour une animation lors du survol */
+
 .chatbot-input form button[type="submit"]:hover {
     background-color: #079992;
 }
+
+/* Style du bouton de soumission lorsqu'il est survolé, changement de couleur de fond */
