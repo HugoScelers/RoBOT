@@ -1,6 +1,6 @@
 const suggestions = document.querySelector("#suggestions");
 
-fetch("https://api-robot.onrender.com//api/v1/chats")
+fetch("https://api-robot.onrender.com/api/v1/chats")
     .then(response => response.json())
     .then(data => {
         const options = {
